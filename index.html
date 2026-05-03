@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hermes Game Jam Agent - Neon Courier</title>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hud">
+        <div>
+          <p class="kicker">Hermes Game Jam Agent</p>
+          <h1>Neon Courier</h1>
+        </div>
+        <div class="stats">
+          <span>Score <strong id="score">0</strong></span>
+          <span>Time <strong id="time">45</strong></span>
+          <span>Best <strong id="best">0</strong></span>
+        </div>
+      </section>
+
+      <section class="layout game-only">
+        <section class="game-wrap">
+          <canvas id="game" width="960" height="600" aria-label="Neon Courier game"></canvas>
+          <div class="overlay" id="overlay">
+            <h2>Collect the memory cores.</h2>
+            <p>Blue cores add score. Red blockers cost time. Gold boosts give a short shield.</p>
+            <strong>Press Space to start</strong>
+          </div>
+        </section>
+      </section>
+
+      <footer class="control-strip">
+        <span>Move: WASD / Arrows</span>
+        <span>Start / Restart: Space</span>
+      </footer>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
